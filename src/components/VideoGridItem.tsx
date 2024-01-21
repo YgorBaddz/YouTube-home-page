@@ -30,7 +30,7 @@ const VideoGridItem = ({
   duration,
   thumbnailUrl,
   videoUrl,
-}): VideoGridItemProps => {
+}: VideoGridItemProps) => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const videosRef = useRef<HTMLVideoElement>(null);
 

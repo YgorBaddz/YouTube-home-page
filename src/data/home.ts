@@ -19,33 +19,33 @@ export const categories = [
 export const videos = [
   {
     id: "1",
-    title: "CSS Anchor Is The Best New CSS Feature Since Flexbox",
+    title: "СТРАШНОЕ НАСЛЕДСТВО ДЕДА",
     channel: {
-      name: "Web Dev Simplified",
-      id: "WebDevSimplified",
+      name: "Kuplinov ► Play",
+      id: "KuplinovPlay",
       profileUrl:
-        "https://yt3.googleusercontent.com/ytc/AIf8zZSBXGepGG51kNMKobtKULfhGhJBp7LrJYYTBfkA=s176-c-k-c0x00ffffff-no-rj",
+        "https://yt3.googleusercontent.com/ytc/AIf8zZTytkFudOmFZAZVz-6CLE3xqLwh9XDsxE7D4q2L0w=s176-c-k-c0x00ffffff-no-rj",
     },
-    views: 222536,
-    postedAt: new Date("2023-08-29"),
-    duration: 938,
-    thumbnailUrl: "https://i.ytimg.com/vi/B4Y9Ed4lLAI/maxresdefault.jpg",
+    views: 9062645,
+    postedAt: new Date("2021-04-21"),
+    duration: 3423,
+    thumbnailUrl: "https://i.ytimg.com/vi/heHX2sa0K9w/maxresdefault.jpg",
     videoUrl:
       "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
   },
   {
     id: "2",
-    title: "NEW Way To Create Variables In JavaScript",
+    title: "Gmod Axe Roulette! (Garry's Mod Sandbox Funny Moments)",
     channel: {
-      name: "Web Dev Simplified",
-      id: "WebDevSimplified",
+      name: "VanossGaming",
+      id: "VanossGaming",
       profileUrl:
-        "https://yt3.googleusercontent.com/ytc/AIf8zZSBXGepGG51kNMKobtKULfhGhJBp7LrJYYTBfkA=s176-c-k-c0x00ffffff-no-rj",
+        "https://yt3.googleusercontent.com/ytc/AIf8zZRdTfl6ra0zoV-EkQ4CKKe6It5QunMgaMp-bYGjqQ=s176-c-k-c0x00ffffff-no-rj",
     },
-    views: 257136,
-    postedAt: new Date("2023-08-22"),
-    duration: 732,
-    thumbnailUrl: "https://i.ytimg.com/vi/d6a8RymS1zI/maxresdefault.jpg",
+    views: 25916681,
+    postedAt: new Date("2015-05-24"),
+    duration: 667,
+    thumbnailUrl: "https://i.ytimg.com/vi/PT3xRghkt2o/maxresdefault.jpg",
     videoUrl:
       "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
   },
