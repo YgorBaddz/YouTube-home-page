@@ -1,25 +1,15 @@
 import { ArrowLeft, Bell, Menu, Mic, Search, Upload, User } from "lucide-react";
 import logo from "../assets/ytlogo.png";
 import Button from "../components/Button";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useSideBarContext } from "../context/SideBarContext";
 
 const PageHeader = () => {
   const [showFullWidthSearch, setShowFullWidthSearch] = useState(false);
 
   return (
     <div className="flex gap-10 lp:gap-20 justify-between pt-2 mb-6 mx-4">
-      <div
-        className={`${
-          showFullWidthSearch ? "hidden" : "flex"
-        } gap-4 items-center flex-shrink-0`}
-      >
-        <Button size="icon" variant="ghost">
-          <Menu />
-        </Button>
-        <a href="/">
-          <img src={logo} alt="" className="h-8" />
-        </a>
-      </div>
+      <PageHeaderFirstSection hidden={showFullWidthSearch} />
 
       <form
         className={`gap-4 flex-grow justify-center ${
@@ -78,5 +68,30 @@ const PageHeader = () => {
     </div>
   );
 };
+
+type PageHeaderFirstSectionProps = {
+  hidden?: boolean;
+};
+
+export function PageHeaderFirstSection({
+  hidden = false,
+}: PageHeaderFirstSectionProps) {
+  const { toggle } = useSideBarContext();
+
+  return (
+    <div
+      className={`${
+        hidden ? "hidden" : "flex"
+      } gap-4 items-center flex-shrink-0`}
+    >
+      <Button onClick={toggle} size="icon" variant="ghost">
+        <Menu />
+      </Button>
+      <a href="/">
+        <img src={logo} alt="" className="h-8" />
+      </a>
+    </div>
+  );
+}
 
 export default PageHeader;
